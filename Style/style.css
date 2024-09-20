@@ -252,16 +252,82 @@ html, body {
 }
 
 /* iPhone version */
-@media (max-width: 768px) {
-    .cloud__image,
-    .sun__image {
-        height: 50px; 
-        width: auto; 
+@media screen and (max-width: 768px) {
+    .header__title {
+        font-size: 35px; 
+        padding-bottom: 70px;
     }
-
-    .main__rect1,
+    .cloud__image {
+        height: 50px; 
+        width: auto;
+        left: 50px; 
+        right: auto; 
+        padding: 0; 
+    }
+    .sun__image { 
+        height: 50px; 
+        width: auto;
+        right: 50px; 
+        left: auto; 
+        padding: 0; 
+    }
+    .header_rect{   
+        width: 302px;
+        height: 80px;
+    }
+    .input {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .btn { 
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+    .loop_image {
+        height: 15px; 
+        width: 15px;
+    }
+    .contact span{
+        font-size: 30px;
+    }
+    .main__rect1 {
+        width: 350px;
+        height: 200px;
+        left: 48%; 
+    }
     .main__rect2 {
-        width: 90%;
+        width: 350px;
+        height: 200px; 
+    }
+    .main__city {
+        font-size: 50px;
+        margin-right: auto; 
+    }
+    .main__degree {
+        font-size: 70px;
+    }
+    .main__degree__text{
+        font-size: 55px;
+        padding-right: 100px;
+    }
+    .main__info {
+        font-size: 20px;
+    }
+    .main__image img{
+        width: 100px; 
         height: auto;
+        margin-top: 65px;
+        margin-left: -50px;
+    }
+    .main__nation {
+        width: 35px;
+        height: 25px;
+    }
+    .main__country {
+        font-size: 10px;
+    }
+    .main__city {
+        font-size: 30px;
+        margin-right: 20px;
     }
 }
