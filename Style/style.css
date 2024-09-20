@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "ZonaPro-Bold";
+    src: url(../fonts/ZonaPro-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "ZonaPro-Regular";
+    src: url(../fonts/ZonaPro-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "ZonaPro-SemiBold";
+    src: url(../fonts/ZonaPro-SemiBold.ttf) format("truetype");
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    height: 236px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title {
+    color: #fff;
+    text-align: center;
+    font-family: "ZonaPro-SemiBold";
+    text-transform: uppercase;
+    font-size: 60px; 
+    padding-bottom: 70px;
+}
+
+.cloud__image{
+    height: 174px;
+    width: 202px;
+    position: absolute;
+    padding: 25px;
+    left: 150px;
+}
+.sun__image{
+    height: 172px;
+    width: 170px;
+    position: absolute;
+    right: 150px;
+    padding-top: 2px;
+}
+.header_rect{   
+    position: absolute;
+    width: 502px;
+    height: 104px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: -200px;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10px;
+    min-width: 100%;
+    margin-bottom: 40px;
+} 
+.input {
+    font-family: "ZonaPro-Regular";
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+    flex: 1; /* Поле ввода занимает все доступное пространство */
+    padding: 18px;
+    border: 1px solid #ffffff; 
+    border-radius: 4px;
+}
+.btn {
+    padding: 5px 7px;
+    background: #000; 
+    border-radius: 4px;
+    cursor: pointer; 
+}
+.loop_image {
+    height: 30px; 
+    width: 30px;
+} 
+
+/* Main */
+.main{
+    flex: 1;
+    background-color: #fff;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.main__rect1, .main__rect2 {
+    background-color: #ffffff; 
+    width: 680px;
+    border-radius: 10px; 
+    box-shadow: 
+        -4px -4px 10px rgba(0, 0, 0, 0.2), 
+        4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px; 
+    box-sizing: border-box; 
+    position: absolute;
+
+}
+
+.main__rect1 {
+    width: 680px;
+    height: 400px;
+    color: #ffffff;
+    top: 10%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+
+.main__rect2 {
+    width: 680px;
+    height: 400px;
+    color: #ffffff;   
+    top: 12%; 
+    left: 51%; 
+    transform: translateX(-50%); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    z-index: 2; 
+}
+
+.main__city,
+.main__degree,
+.main__info,
+.main__degree__text {
+    color: #000;
+    font-family: 'ZonaPro-Regular';
+    margin: 0px; 
+}
+
+.main__city {
+    font-family: 'ZonaPro-Bold';
+    font-size: 75px;
+    margin-right: auto; 
+}
+.main__degree__container{
+    display: flex;
+    align-items: center;
+}
+.main__degree {
+    font-family: 'ZonaPro-SemiBold';
+    font-size: 95px;
+    margin-right: 10px;
+}
+.main__degree__text{
+    font-family: 'ZonaPro-SemiBold';
+    font-size: 80px;
+    vertical-align: top;
+}
+
+.main__info {
+    font-family: 'ZonaPro-Regular';
+    font-size: 30px;
+    white-space: nowrap;
+    margin: 0; 
+}
+
+.main__image {
+    width: 258px;
+    height: 230px;
+    padding-bottom: 30px;
+}
+
+.main__nation {
+    width: 50px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__country {
+    font-family: 'ZonaPro-Regular';
+    font-size: 20px;
+    color: #fff;
+}
+.main__lg__container {
+    display: flex;
+    align-items: center;
+}
+.main__city {
+    font-family: 'ZonaPro-Regular';
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+.footer .contact{
+    font-family: 'ZonaPro-SemiBold';
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 20px;
+}
+.nav-bar {
+    position: absolute; 
+    width: 100%;
+    top: 50%; 
+    left: 0;
+    transform: translateY(-50%);
+}
+.nav-bar::before,
+.nav-bar::after {
+    content: '';
+    height: 6px; 
+    background-color: #fff; 
+    position: absolute;
+    top: 50%;
+}
+.nav-bar::before {
+    width: calc(50% - 220px);
+    left: 0;
+}
+.nav-bar::after {
+    width: calc(50% - 220px); 
+    right: 0;
+}
+
+/* iPhone version */
+@media (max-width: 768px) {
+    .cloud__image,
+    .sun__image {
+        height: 50px; 
+        width: auto; 
+    }
+
+    .main__rect1,
+    .main__rect2 {
+        width: 90%;
+        height: auto;
+    }
+}

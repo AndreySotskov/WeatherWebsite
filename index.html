@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" href="img/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="img/logo/favicon-apple.png">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__title">The weather for today</h1>
+        <img id="cloudImage" class="cloud__image" src="img/Icon/cloud.svg" alt="cloud">
+        <img id="sunImage" class="sun__image" src="img/Icon/sun.svg" alt="sun">
+        <div class="header_rect">
+            <form class="form">
+                <input id="cityInput" class="input" type="text" placeholder="Введите название...">
+                <button id="searchBtn" class="btn">
+                    <img class="loop_image" src="img/Icon/loop.svg" alt="loop">
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__rect1"></div>
+        <div id="weatherInfo" class="main__rect2">
+            <div id="textContent" class="text-content">
+                <div id="locationContainer" class="main__lg__container">
+                    <h2 id="cityName" class="main__city">Ковров</h2>
+                    <div id="countryContainer" class="main__nation">
+                        <h4 id="countryName" class="main__country">RU</h4>
+                    </div>
+                </div>
+                <div id="temperatureContainer" class="main__degree__container">
+                    <h1 id="temperature" class="main__degree">23</h1>
+                    <span id="degreeSymbol" class="main__degree__text">°C</span>
+                </div>
+                <p id="weatherDescription" class="main__info">Переменная облачность</p>
+            </div>
+            <img id="weatherIcon" class="main__image" src="img/Icon/sun_rain.svg" alt="sunny and rainy">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contact">
+            <span>flavvvour</span>
+        </div>
+        <div class="nav-bar"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
