@@ -176,7 +176,7 @@ html, body {
     margin: 0; 
 }
 
-.main__image {
+.main__image img{
     width: 258px;
     height: 230px;
     padding-bottom: 30px;
@@ -329,5 +329,37 @@ html, body {
     .main__city {
         font-size: 30px;
         margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .cloud__image {
+        height: 50px; 
+        width: auto;
+        left: 50px; 
+        right: auto; 
+        padding: 0; 
+    }
+    .sun__image { 
+        height: 50px; 
+        width: auto;
+        right: 50px; 
+        left: auto; 
+        padding: 0; 
+    }
+}
+@media screen and (max-width: 800px) {
+    .cloud__image {
+        height: 40px; 
+        width: auto;
+        left: 50px; 
+        right: auto;
+        padding: 0; 
+    }
+    .sun__image { 
+        height: 40px; 
+        width: auto;
+        right: 50px; 
+        left: auto; 
+        padding: 0; 
     }
 }
